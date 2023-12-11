@@ -19,9 +19,9 @@ export default {
     <!--container  -->
     <div class="container">
         <!-- logo -->
-        <div class="logo">ok</div>
+        <div class="logo"><img src="/public/construction/images/construction_logo.png" alt=""></div>
         <!-- options -->
-        <div>
+        <div class="container-options">
             <ul class="options">
                 <li>HOME</li>
                 <li>ABOUT</li>
@@ -29,8 +29,9 @@ export default {
                 <li>WORK</li>
                 <li>ARTICLES</li>
                 <li>
-                    <button>GET QUOTE</button>
-
+                    <div class="quote">
+                        GET QUOTE
+                    </div>
                 </li>
             </ul>
         </div>
@@ -41,17 +42,35 @@ export default {
 .container {
     display: flex;
     justify-content: space-around;
+    height: 10vh;
+    object-fit: cover;
+    width: 100%;
+}
+
+
+.container-options {
+    display: flex;
+    align-items: center;
 }
 
 .options {
     display: flex;
     justify-content: space-around;
     list-style: none;
+    align-items: center;
+}
+
+.quote {
+    display: flex;
+    align-items: center;
+    background-color: yellow;
+    padding: 10px;
+    height: 100%;
 }
 
 li,
 .logo {
-    margin: 5px 10px;
+    margin: 5px 20px;
     display: flex;
     align-items: center;
 }
