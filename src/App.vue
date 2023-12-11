@@ -27,10 +27,6 @@ export default {
 	</main>
 </template>
 
-<style >
-* {
-	font-family: sans-serif;
-}
-</style>
+<style lang="scss"></style>
 
 <style scoped></style>

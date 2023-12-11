@@ -63,8 +63,8 @@ export default {
 .quote {
     display: flex;
     align-items: center;
-    background-color: yellow;
-    padding: 10px;
+    background-color: #fed03d;
+    padding: 20px;
     height: 100%;
 }
 

@@ -14,6 +14,10 @@ export default {
             <h1>BUILDING INSPIRING SPACES</h1>
             <div class="slogan">We Build Inspiring Residential & Commercial Spaces</div>
         </div>
+        <div class="buttons">
+            <div class="left">EXPLORE RECENT WORK</div>
+            <div class="right">GET A QUOTE TODAY</div>
+        </div>
     </div>
 </template>
 <style scoped>
@@ -32,16 +36,35 @@ export default {
     color: white;
 }
 
+h1 {
+    margin: 0;
+}
+
 .slogan {
+    width: 100%;
     color: #fed03d;
     text-align: center;
-    font-size: 1em;
+    font-size: 2rem;
     font-weight: 200;
 }
 
-img {
-    width: 100%;
-    height: 100%;
-    object-position: left;
+.buttons {
+    display: flex;
+    font-size: 1.1rem;
+}
+
+.right {
+    background-color: #fed03d;
+    color: black;
+}
+
+.left {
+    background-color: #333333;
+}
+
+.right,
+.left {
+    margin: 20px 20px;
+    padding: 25px;
 }
 </style>
