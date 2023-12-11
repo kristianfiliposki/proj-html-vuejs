@@ -23,25 +23,42 @@ export default {
         <!-- options -->
         <div class="container-options">
             <ul class="options">
-                <li>HOME</li>
-                <li>ABOUT</li>
-                <li>SERVICE</li>
-                <li>WORK</li>
-                <li>ARTICLES</li>
-                <li>
-                    <div class="quote">
-                        GET QUOTE
-                    </div>
-                </li>
+                <a href="">
+                    <li>HOME</li>
+                </a>
+                <a href="">
+                    <li>ABOUT</li>
+                </a>
+                <a href="">
+                    <li>SERVICE</li>
+                </a>
+                <a href="">
+                    <li>WORK</li>
+                </a>
+                <a href="">
+                    <li>ARTICLES</li>
+                </a>
+                <a href="">
+                    <li>
+                        <div class="quote">
+                            GET QUOTE
+                        </div>
+                    </li>
+                </a>
             </ul>
         </div>
     </div>
 </template>
 
 <style scoped >
+a {
+    text-decoration: none;
+    color: black;
+}
+
 .container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     height: 10vh;
     object-fit: cover;
     width: 100%;
@@ -66,6 +83,10 @@ export default {
     background-color: #fed03d;
     padding: 20px;
     height: 100%;
+}
+
+.quote:hover {
+    color: white;
 }
 
 li,

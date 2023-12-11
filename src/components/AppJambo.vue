@@ -15,12 +15,23 @@ export default {
             <div class="slogan">We Build Inspiring Residential & Commercial Spaces</div>
         </div>
         <div class="buttons">
-            <div class="left">EXPLORE RECENT WORK</div>
-            <div class="right">GET A QUOTE TODAY</div>
+            <a href="">
+                <div class="left">EXPLORE RECENT WORK</div>
+            </a>
+
+            <a href="">
+                <div class="right">GET A QUOTE TODAY</div>
+            </a>
+
         </div>
     </div>
 </template>
 <style scoped>
+a {
+    text-decoration: none;
+    color: white;
+}
+
 .container {
     background: url("/public/construction/images/home-slider-62528242.jpg");
     height: 90vh;
@@ -60,6 +71,26 @@ h1 {
 
 .left {
     background-color: #333333;
+    color: white;
+}
+
+.left:hover {
+    background-color: #fed03d;
+    color: black;
+}
+
+.right:hover {
+    background-color: #333333;
+}
+
+.left:hover {
+    background-color: #fed03d;
+}
+
+.left:hover,
+.right:hover {
+    transition: 0.2s;
+    color: white;
 }
 
 .right,
