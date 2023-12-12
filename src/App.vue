@@ -27,17 +27,12 @@ export default {
 </script>
 
 <template>
-	<header>
-		<AppHeader />
-	</header>
-	<main>
-		<AppJambo />
-		<AppMain />
-		<AppStats />
-	</main>
-	<footer></footer>
+	<AppHeader />
+	<AppJambo />
+	<AppMain />
+	<AppStats />
 </template>
 
-<style lang="scss"></style>
+<style ></style>
 
 <style scoped></style>
