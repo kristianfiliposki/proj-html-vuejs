@@ -33,6 +33,10 @@ export default {
 	<AppStats />
 </template>
 
-<style ></style>
+<style >
+AppJambo {
+	margin-bottom: 2002px;
+}
+</style>
 
 <style scoped></style>

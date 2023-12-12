@@ -54,10 +54,11 @@ export default {
 
 <style>
 .fixed {
-    position: fixed;
     background-color: white;
+    position: fixed;
     width: 100%;
     z-index: 999;
+
 }
 </style>
 

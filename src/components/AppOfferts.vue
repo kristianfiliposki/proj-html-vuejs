@@ -62,7 +62,6 @@ export default {
 .container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
@@ -76,8 +75,8 @@ export default {
 
 .cards {
     background: #f5f5f5;
-    width: 220px;
-    height: 300px;
+    width: 270px;
+    height: 320px;
     border-radius: 11px;
     margin: 10px 20px;
 }
@@ -131,3 +130,4 @@ p {
     font-size: 1rem;
 }
 </style>
+
