@@ -1,14 +1,14 @@
 <script>
 import AppHeader from "./components/AppHeader.vue"
 import AppJambo from "./components/AppJambo.vue"
-import AppAppAddProject from "./components/AppAppAddProject.vue"
+import AppMain from "./components/AppMain.vue"
 import { store } from "./store.js" //state management
 
 export default {
 	components: {
 		AppHeader,
 		AppJambo,
-		AppAppAddProject
+		AppMain,
 	},
 	data() {
 		return {
@@ -26,8 +26,7 @@ export default {
 	<main>
 		<AppHeader />
 		<AppJambo />
-		<AppAppAddProject />
-
+		<AppMain />
 	</main>
 </template>
 

@@ -1,4 +1,13 @@
-<script></script>
+<script>
+export default {
+    name: "AddProject",
+    data() {
+        return {
+
+        }
+    }
+}
+</script>
 <template>
     <div>Do You Have A Construction Project We Can Help With?</div>
 </template>
