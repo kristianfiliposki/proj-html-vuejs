@@ -16,39 +16,50 @@ export default {
 </script>
 
 <template>
-    <!--container  -->
-    <div class="container">
-        <!-- logo -->
-        <div class="logo"><img src="/public/construction/images/construction_logo.png" alt=""></div>
-        <!-- options -->
-        <div class="container-options">
-            <ul class="options">
-                <a href="">
-                    <li>HOME</li>
-                </a>
-                <a href="">
-                    <li>ABOUT</li>
-                </a>
-                <a href="">
-                    <li>SERVICE</li>
-                </a>
-                <a href="">
-                    <li>WORK</li>
-                </a>
-                <a href="">
-                    <li>ARTICLES</li>
-                </a>
-                <a href="">
-                    <li>
-                        <div class="quote">
-                            GET QUOTE
-                        </div>
-                    </li>
-                </a>
-            </ul>
+    <div class="fixed">
+        <!--container  -->
+        <div class="container">
+            <!-- logo -->
+            <div class="logo"><img src="/public/construction/images/construction_logo.png" alt=""></div>
+            <!-- options -->
+            <div class="container-options">
+                <ul class="options">
+                    <a href="">
+                        <li>HOME</li>
+                    </a>
+                    <a href="">
+                        <li>ABOUT</li>
+                    </a>
+                    <a href="">
+                        <li>SERVICE</li>
+                    </a>
+                    <a href="">
+                        <li>WORK</li>
+                    </a>
+                    <a href="">
+                        <li>ARTICLES</li>
+                    </a>
+                    <a href="">
+                        <li>
+                            <div class="quote">
+                                GET QUOTE
+                            </div>
+                        </li>
+                    </a>
+                </ul>
+            </div>
         </div>
     </div>
 </template>
+
+<style>
+.fixed {
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    z-index: 999;
+}
+</style>
 
 <style scoped >
 a {
@@ -59,7 +70,7 @@ a {
 .container {
     display: flex;
     justify-content: space-between;
-    height: 10vh;
+    height: 15vh;
     object-fit: cover;
     width: 100%;
 }

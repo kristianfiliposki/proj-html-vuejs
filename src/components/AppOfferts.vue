@@ -70,18 +70,18 @@ export default {
     width: 45%;
 }
 
+.container-cards {
+    display: flex;
+}
+
 .cards {
-    background: rgb(222, 222, 222);
-    width: 200px;
+    background: #f5f5f5;
+    width: 220px;
     height: 300px;
     border-radius: 11px;
     margin: 10px 20px;
 }
 
-.container-cards {
-    width: 60%;
-    display: flex;
-}
 
 .logo-box {
     display: flex;
@@ -107,10 +107,11 @@ export default {
 }
 
 .logo {
+    text-align: center;
     border: 1px solid grey;
-    border-radius: 20px;
+    border-radius: 80%;
     width: 20%;
-    padding: 9px;
+    padding: 18px;
 }
 
 h2 {
