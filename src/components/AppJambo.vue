@@ -1,9 +1,10 @@
 <script>
+import { store } from "../store.js" //state management
 export default {
     name: "Jambo",
     data() {
         return {
-
+            store,
         }
     }
 }

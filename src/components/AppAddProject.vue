@@ -1,8 +1,11 @@
 <script>
+import { store } from "../store.js" //state management
+
 export default {
     name: "AddProject",
     data() {
         return {
+            store,
 
         }
     }

@@ -1,32 +1,10 @@
 <script>
+import { store } from "../store.js" //state management
+
 export default {
     data() {
         return {
-            cards: [
-                {
-                    logo: `<i class="fa-solid fa-building"></i>`,
-                    name: "Buildings",
-                    p: "Quis autem vel eum iure reprederit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum."
-                },
-                {
-                    logo: `<i class="fa-solid fa-building"></i>`,
-                    name: "Renovate",
-                    p: "Quis autem vel eum iure reprederit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum."
-
-                },
-                {
-                    logo: `<i class="fa-solid fa-building"></i>`,
-                    name: "Construct",
-                    p: "Quis autem vel eum iure reprederit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum."
-
-                },
-                {
-                    logo: `<i class="fa-solid fa-building"></i>`,
-                    name: "Exclusive",
-                    p: "Quis autem vel eum iure reprederit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum."
-
-                },
-            ]
+            store,
         }
     }
 }
@@ -42,7 +20,7 @@ export default {
             </p>
         </div>
         <div class="container-cards">
-            <div v-for="card in cards" class="cards">
+            <div v-for="card in store.cards" class="cards">
                 <div class="logo-box">
                     <div class="logo">
                         <i class="fa-solid fa-building"></i>

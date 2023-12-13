@@ -1,5 +1,6 @@
 <script>
-import AddProject from "./AppAddProject.vue"
+import { store } from "../store.js" //state management
+import AddProject from "./AppAddproject.vue";
 import AppOfferts from "./AppOfferts.vue";
 export default {
     name: "AppMain",
@@ -10,6 +11,7 @@ export default {
 
     data() {
         return {
+            store,
         }
     }
 }
@@ -19,3 +21,4 @@ export default {
     <AppOfferts />
 </template>
 <style></style>
+

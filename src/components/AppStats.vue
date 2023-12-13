@@ -1,31 +1,10 @@
 <script>
 name: "AppStats";
+import { store } from "../store.js" //state management
 export default {
     data() {
         return {
-            stats: [
-                {
-                    logo: "",
-                    numero: "3534",
-                    name: "PLANNING APPLICATIONS",
-                },
-                {
-                    logo: "",
-                    numero: "896",
-                    name: "COMPLETED PROJECTS",
-                },
-                {
-                    logo: "",
-                    numero: "172",
-                    name: "TRAINED PROFESSIONALS",
-                },
-                {
-                    logo: "",
-                    numero: "19",
-                    name: "INTERNATIONAL OFFICES",
-                },
-
-            ]
+            store,
         }
     }
 }
@@ -35,7 +14,7 @@ export default {
         <div class="rounded-top"></div>
         <div class="img">
             <div class="stats">
-                <div class="stat" v-for="stat in stats">
+                <div class="stat" v-for="stat in store.stats">
                     <div>
                         <div class="box-logo">
                             <div class="logo">
