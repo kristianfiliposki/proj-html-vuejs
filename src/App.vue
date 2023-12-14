@@ -1,4 +1,5 @@
 <script>
+/* importo i componenti */
 import AppHeader from "./components/AppHeader.vue";
 import AppJambo from "./components/AppJambo.vue";
 import AddElements from "./components/AppElements.vue";
@@ -38,8 +39,6 @@ export default {
 	methods: {
 	}
 }
-
-
 </script>
 
 <template>
