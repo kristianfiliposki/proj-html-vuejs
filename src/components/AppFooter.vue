@@ -30,16 +30,28 @@ export default {
         </div>
         <!-- this element explain we are -->
 
-        <!-- tweets -->
+        <!-- TWEETS -->
         <div class="tweets">
             <!-- title -->
             <h3>LATEST TWEETS</h3>
-            <!-- paragraph -->
-            <p>Avada 7.0 Beta 2 is out & we cannot wait to release 7.0 into the wild soon. Column flexibility, layout
-                flexibility, responsive flexibility, menus, headers, workflow tools, and so much more to be excited about.
-            </p>
+            <!-- posts -->
+            <div class="post" v-for="post in store.messages">
+                <div class="header-post">
+                    <div class="img-profil">
+                        <img src="/public/construction/images/3a74ce3d0532b7773b174c45ca3bd05a_bigger.png" alt="">
+                    </div>
+                    <div class="who">
+                        <div class="name">{{ post.name }}</div>
+                        <div class="mail">{{ post.mail }}</div>
+                    </div>
+                    <div class="date"> {{ post.data }}</div>
+                </div>
+                <div class="main-post">
+                    <p class="message">{{ post.message }}</p>
+                </div>
+            </div>
         </div>
-        <!-- tweets -->
+        <!-- TWEETS -->
 
 
         <!-- contacts -->
@@ -63,6 +75,7 @@ export default {
     </div>
     <!-- container footer-->
 
+
     <!-- diritti -->
     <div class="rights">
         <!-- ©COPYRIGHT -->
@@ -79,6 +92,8 @@ export default {
             <div><font-awesome-icon icon="fa-brands fa-youtube" /></div>
             <div><font-awesome-icon icon="fa-brands fa-instagram" /></div>
         </div>
+        <!-- social -->
+
     </div>
 </template>
 <style scoped>
@@ -94,12 +109,42 @@ export default {
 
 }
 
+.post {
+    width: 100%;
+}
+
+.header-post {
+    display: flex;
+    width: 100%;
+}
+
+.img-profil {
+    width: 10%;
+    height: 10%;
+}
+
+.img-profil img {
+    width: 100%;
+    height: 100%;
+}
+
+.who div {
+    margin: 0 10px;
+}
+
+.main-post div {
+    color: white;
+    line-height: normal;
+}
+
 .WeAre {
     width: 20%;
 }
 
 .tweets {
-    width: 20%;
+    width: 275px;
+    height: 430px;
+    overflow-y: auto;
     text-align: center;
     display: flex;
     flex-direction: column;

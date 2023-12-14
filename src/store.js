@@ -105,5 +105,27 @@ export const store = reactive({
             p:"Technology is Here to Stay Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus purus nisl, elementum vitae consequat at, tristique ut enim. Sed ut dignissim leo. Nullam sed metus id sapien faucibus rhoncus sed",
         },
 
+    ],
+    messages:[
+        {
+            name:"Elon Mask",
+            mail:"ElonMask@SpaceX.it",
+            data:"11/12/2089",
+            message:"Avada 7.0, the Website Builder, has been released! There are many new features to celebrate: Header Builder, new Dashboard, amazing Menu Element, flexbox control for layouts, multi-column mobile layouts, a new prebuilt website, & so much more https://bit.ly/3eSMpot",
+        },
+        {
+            name:"Kristian Filiposki",
+            mail:"Kristian@vuejs.it",
+            data:"11/12/2089",
+            message:"Avada 7.0, the Website Builder, has been released! There are many new features to celebrate: Header Builder, new Dashboard, amazing Menu Element, flexbox control for layouts, multi-column mobile layouts, a new prebuilt website, & so much more https://bit.ly/3eSMpot",
+        },
+        {
+            name:"Jhon snoww ",
+            mail:"GrandeInverno@stark.it",
+            data:"11/12/1223",
+            message:"Avada 7.0, the Website Builder, has been released! There are many new features to celebrate: Header Builder, new Dashboard, amazing Menu Element, flexbox control for layouts, multi-column mobile layouts, a new prebuilt website, & so much more https://bit.ly/3eSMpot",
+        },
+
+
     ]
 });
