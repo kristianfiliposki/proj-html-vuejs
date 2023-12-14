@@ -31,27 +31,32 @@ export default {
         <!-- this element explain we are -->
 
         <!-- TWEETS -->
-        <div class="tweets">
+        <div class="posts">
             <!-- title -->
             <h3>LATEST TWEETS</h3>
             <!-- posts -->
-            <div class="post" v-for="post in store.messages">
-                <div class="header-post">
-                    <div class="img-profil">
-                        <img src="/public/construction/images/3a74ce3d0532b7773b174c45ca3bd05a_bigger.png" alt="">
+            <div class="tweets">
+                <!-- posts -->
+                <div class="post" v-for="post in store.messages">
+                    <div class="header-post">
+                        <div class="img-profil">
+                            <img src="/public/construction/images/3a74ce3d0532b7773b174c45ca3bd05a_bigger.png" alt="">
+                        </div>
+                        <div class="who">
+                            <div class="name">{{ post.name }}</div>
+                            <div class="mail">{{ post.mail }}</div>
+                        </div>
+                        <div class="date"> {{ post.data }}</div>
                     </div>
-                    <div class="who">
-                        <div class="name">{{ post.name }}</div>
-                        <div class="mail">{{ post.mail }}</div>
+                    <div class="main-post">
+                        <p class="message">{{ post.message }}</p>
                     </div>
-                    <div class="date"> {{ post.data }}</div>
-                </div>
-                <div class="main-post">
-                    <p class="message">{{ post.message }}</p>
                 </div>
             </div>
+            <!-- posts -->
         </div>
         <!-- TWEETS -->
+
 
 
         <!-- contacts -->
@@ -165,7 +170,7 @@ export default {
 }
 
 .box-logo {
-    width: 50%;
+    width: 75%;
     height: 15%;
 }
 
