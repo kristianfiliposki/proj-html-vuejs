@@ -43,7 +43,11 @@ export default {
 </script>
 
 <template>
+	<!-- header -->
 	<AppHeader />
+	<!-- header -->
+
+	<!-- main -->
 	<AppJambo />
 	<AddElements />
 	<AppOfferts />
@@ -54,7 +58,11 @@ export default {
 	<AppPosition />
 	<AppCarosello />
 	<AppInspiring />
+	<!-- main -->
+
+	<!-- footer -->
 	<AppFooter />
+	<!-- footer -->
 </template>
 
 <style >
