@@ -18,7 +18,7 @@ export default {
                     <div>
                         <div class="box-logo">
                             <div class="logo">
-                                <i class="fa-solid fa-building"></i>
+                                <font-awesome-icon :icon="stat.logo" />
                             </div>
                         </div>
 

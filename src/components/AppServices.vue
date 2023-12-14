@@ -19,7 +19,7 @@ export default {
         <div class="box-card">
             <div v-for="serivice in store.services" class="card">
                 <div class="element">
-                    <div>LOGO</div>
+                    <div><font-awesome-icon :icon="serivice.logo" :class="serivice.class" /></div>
                 </div>
                 <div class="element">
                     <h4>{{ serivice.title }}</h4>
@@ -35,6 +35,37 @@ export default {
 </template>
 
 <style scoped>
+.house,
+.setting,
+.users,
+.light {
+    font-size: 4em;
+    padding: 0.3em;
+    background-color: #21a6b5;
+    color: white;
+    border-radius: 50%;
+    width: 65%;
+    aspect-ratio: 1;
+}
+
+.house {
+    background-color: #21a6b5;
+}
+
+.setting {
+    background-color: #517ad2;
+}
+
+.users {
+    background-color: #FE813E;
+}
+
+.light {
+    background-color: #84CB01;
+}
+
+
+
 .card {
     margin: 2em;
 }

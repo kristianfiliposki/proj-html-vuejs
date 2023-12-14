@@ -23,7 +23,7 @@ export default {
             <div v-for="card in store.cards" class="cards">
                 <div class="logo-box">
                     <div class="logo">
-                        <i class="fa-solid fa-building"></i>
+                        <font-awesome-icon :icon="card.logo" />
                     </div>
                 </div>
                 <div class="name">

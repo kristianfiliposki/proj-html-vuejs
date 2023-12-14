@@ -26,6 +26,7 @@ export default {
 
         </div>
     </div>
+    <div><font-awesome-icon icon="users" /></div>
 </template>
 <style scoped>
 a {

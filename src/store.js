@@ -9,24 +9,24 @@ export const store = reactive({
     ],
     cards: [
         {
-            logo: `<i class="fa-solid fa-building"></i>`,
+            logo: `fa-solid fa-building`,
             name: "Buildings",
             p: "Quis autem vel eum iure reprederit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum."
         },
         {
-            logo: `<i class="fa-solid fa-building"></i>`,
+            logo: `fa-solid fa-arrows-rotate`,
             name: "Renovate",
             p: "Quis autem vel eum iure reprederit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum."
 
         },
         {
-            logo: `<i class="fa-solid fa-building"></i>`,
+            logo: `fa-solid fa-house`,
             name: "Construct",
             p: "Quis autem vel eum iure reprederit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum."
 
         },
         {
-            logo: `<i class="fa-solid fa-building"></i>`,
+            logo: `fa-solid fa-truck`,
             name: "Exclusive",
             p: "Quis autem vel eum iure reprederit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum."
 
@@ -34,22 +34,22 @@ export const store = reactive({
     ],
     stats: [
         {
-            logo: "",
+            logo: "fa-solid fa-box",
             numero: "3534",
             name: "PLANNING APPLICATIONS",
         },
         {
-            logo: "",
+            logo: "fa-solid fa-building",
             numero: "896",
             name: "COMPLETED PROJECTS",
         },
         {
-            logo: "",
+            logo: "fa-solid fa-users",
             numero: "172",
             name: "TRAINED PROFESSIONALS",
         },
         {
-            logo: "",
+            logo: "fa-solid fa-globe",
             numero: "19",
             name: "INTERNATIONAL OFFICES",
         },
@@ -57,24 +57,28 @@ export const store = reactive({
     ],
     services:[
         {
-            logo:"",
+            logo:"fa-solid fa-house",
             title:"Great Services",
             paragraph:"Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia ",
+            class:"house"
         },
         {
-            logo:"",
+            logo:"fa-solid fa-gear",
             title:"High standard",
             paragraph:"Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia ",
+            class:"setting"
         },
         {
-            logo:"",
+            logo:"fa-solid fa-users",
             title:"Professional team",
             paragraph:"Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia ",
+            class:"users"
         },
         {
-            logo:"",
+            logo:"fa-regular fa-lightbulb",
             title:"Creative Solutions",
-            paragraph:"Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia "
+            paragraph:"Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia ",
+            class:"light"
         },
 
     ],

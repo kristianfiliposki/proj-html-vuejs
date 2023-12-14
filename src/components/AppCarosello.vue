@@ -11,11 +11,11 @@ export default {
 <template>
     <div class="flex">
         <div class="box">
-            <h2>Our Home Owners Say</h2>
+            <h2>Trusted Partners</h2>
             <hr>
-            <p class="description">“Many novice real estate investors soon quit the profession and invest. When you
-                invest in real estate, you often see a side of humanity that stocks, bonds, mutual funds, and saving
-                money shelter you from.”
+            <p class="description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
             </p>
             <div class="SWIPER">SWIPER</div>
         </div>
@@ -30,6 +30,10 @@ export default {
 .flex {
     display: flex;
     justify-content: center;
+}
+
+.description {
+    text-align: center;
 }
 
 .box {
