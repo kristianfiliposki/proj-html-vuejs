@@ -1,7 +1,7 @@
 <script>
 import AppHeader from "./components/AppHeader.vue";
 import AppJambo from "./components/AppJambo.vue";
-import AddProject from "./components/AppAddproject.vue";
+import AddElements from "./components/AppElements.vue";
 import AppOfferts from "./components/AppOfferts.vue";
 import AppStats from "./components/AppStats.vue";
 import AppRecentWorks from "./components/AppRecentWorks.vue";
@@ -17,7 +17,7 @@ export default {
 	components: {
 		AppHeader,
 		AppJambo,
-		AddProject,
+		AddElements,
 		AppOfferts,
 		AppStats,
 		AppRecentWorks,
@@ -45,7 +45,7 @@ export default {
 <template>
 	<AppHeader />
 	<AppJambo />
-	<AddProject />
+	<AddElements />
 	<AppOfferts />
 	<AppStats />
 	<AppRecentWorks />
