@@ -1,35 +1,36 @@
 <script>
 import { store } from '../store';
+// Import Swiper Vue.js components
+import { Swiper, SwiperSlide } from 'swiper/vue';
+import style from "../style"
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
 
-const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    direction: 'vertical',
-    loop: true,
-
-    // If we need pagination
-    pagination: {
-        el: '.swiper-pagination',
-    },
-
-    // Navigation arrows
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-
-    // And if we need scrollbar
-    scrollbar: {
-        el: '.swiper-scrollbar',
-    },
-});
+// import required modules
+import { Pagination } from 'swiper/modules';
 
 export default {
     data() {
         return {
             store,
         }
+    },
+
+    components: {
+        Swiper,
+        SwiperSlide,
+    },
+    setup() {
+        return {
+            modules: [Pagination],
+        };
+
     }
 }
+
+
+
 </script>
 <template>
     <div class="flex">
@@ -42,39 +43,18 @@ export default {
             </p>
             <div class="carosello">
 
-                <!-- Slider main container -->
-                <div class="swiper">
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide"><img src="/public/construction/images/home-logo1-219096700-320x202.png"
-                                alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="/proj-html-vuejs/public/construction/images/home-logo2-219096700-320x202.png" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="/proj-html-vuejs/public/construction/images/home-logo9-219096700-320x202.png" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="/proj-html-vuejs/public/construction/images/home-logo10-219096700-320x202.png" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="/proj-html-vuejs/public/construction/images/home-logo11-219096700-320x202.png" alt="">
-                        </div>
+                <swiper :pagination="true" :modules="modules" class="mySwiper">
+                    <swiper-slide>
+                        <img src="/proj-html-vuejs/public/construction/images/home-logo1-219096700-320x202.png" alt="">
+                    </swiper-slide>
+                    <swiper-slide>
+                        <img src="/proj-html-vuejs/public/construction/images/home-logo1-219096700-320x202.png" alt="">
+                    </swiper-slide>
+                    <swiper-slide>
+                        <img src="/proj-html-vuejs/public/construction/images/home-logo1-219096700-320x202.png" alt="">
+                    </swiper-slide>
 
-                        ...
-                    </div>
-                    <!-- If we need pagination -->
-                    <div class="swiper-pagination"></div>
-
-                    <!-- If we need navigation buttons -->
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-
-                    <!-- If we need scrollbar -->
-                    <div class="swiper-scrollbar"></div>
-                </div>
+                </swiper>
             </div>
         </div>
     </div>

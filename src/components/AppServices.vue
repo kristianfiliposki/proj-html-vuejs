@@ -99,6 +99,8 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #f5f5f5;
+    margin-top: 4em;
 }
 
 h4 {

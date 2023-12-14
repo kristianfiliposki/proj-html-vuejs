@@ -1,7 +1,8 @@
 <script>
 import AppHeader from "./components/AppHeader.vue";
 import AppJambo from "./components/AppJambo.vue";
-import AppMain from "./components/AppMain.vue";
+import AddProject from "./components/AppAddproject.vue";
+import AppOfferts from "./components/AppOfferts.vue";
 import AppStats from "./components/AppStats.vue";
 import AppRecentWorks from "./components/AppRecentWorks.vue";
 import AppServices from "./components/AppServices.vue";
@@ -16,7 +17,8 @@ export default {
 	components: {
 		AppHeader,
 		AppJambo,
-		AppMain,
+		AddProject,
+		AppOfferts,
 		AppStats,
 		AppRecentWorks,
 		AppServices,
@@ -25,8 +27,6 @@ export default {
 		AppCarosello,
 		AppInspiring,
 		AppFooter,
-
-
 	},
 	data() {
 		return {
@@ -45,7 +45,8 @@ export default {
 <template>
 	<AppHeader />
 	<AppJambo />
-	<AppMain />
+	<AddProject />
+	<AppOfferts />
 	<AppStats />
 	<AppRecentWorks />
 	<AppServices />
