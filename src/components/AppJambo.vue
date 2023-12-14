@@ -35,10 +35,10 @@ a {
 
 .container {
     background: url("/public/construction/images/home-slider-62528242.jpg");
-    height: 90vh;
+    height: 100vh;
     background-size: cover;
     width: 100%;
-    background-position: center;
+    background-position: top;
     display: flex;
     justify-content: center;
     align-items: center;
