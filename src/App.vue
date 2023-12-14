@@ -8,6 +8,8 @@ import AppServices from "./components/AppServices.vue";
 import AppCit from "./components/AppCit.vue";
 import AppPosition from "./components/AppPosition.vue";
 import AppCarosello from "./components/AppCarosello.vue";
+import AppInspiring from "./components/AppInspiring.vue";
+import AppFooter from "./components/AppFooter.vue";
 import { store } from "./store.js" //state management
 
 export default {
@@ -21,6 +23,8 @@ export default {
 		AppCit,
 		AppPosition,
 		AppCarosello,
+		AppInspiring,
+		AppFooter,
 
 
 	},
@@ -48,6 +52,8 @@ export default {
 	<AppCit />
 	<AppPosition />
 	<AppCarosello />
+	<AppInspiring />
+	<AppFooter />
 </template>
 
 <style >
