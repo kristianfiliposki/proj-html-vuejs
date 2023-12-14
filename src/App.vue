@@ -1,12 +1,13 @@
 <script>
-import AppHeader from "./components/AppHeader.vue"
-import AppJambo from "./components/AppJambo.vue"
-import AppMain from "./components/AppMain.vue"
-import AppStats from "./components/AppStats.vue"
-import AppRecentWorks from "./components/AppRecentWorks.vue"
-import AppServices from "./components/AppServices.vue"
-import AppCit from "./components/AppCit.vue"
-import AppPosition from "./components/AppPosition.vue"
+import AppHeader from "./components/AppHeader.vue";
+import AppJambo from "./components/AppJambo.vue";
+import AppMain from "./components/AppMain.vue";
+import AppStats from "./components/AppStats.vue";
+import AppRecentWorks from "./components/AppRecentWorks.vue";
+import AppServices from "./components/AppServices.vue";
+import AppCit from "./components/AppCit.vue";
+import AppPosition from "./components/AppPosition.vue";
+import AppCarosello from "./components/AppCarosello.vue";
 import { store } from "./store.js" //state management
 
 export default {
@@ -19,6 +20,7 @@ export default {
 		AppServices,
 		AppCit,
 		AppPosition,
+		AppCarosello,
 
 
 	},
@@ -45,6 +47,7 @@ export default {
 	<AppServices />
 	<AppCit />
 	<AppPosition />
+	<AppCarosello />
 </template>
 
 <style >

@@ -17,7 +17,7 @@ export default {
                 <h2>Our Home Owners Say</h2>
                 <hr>
                 <div class="testiomonial">
-                    <img :src="store.img" alt="">
+                    <img :src="store.Testimonial" alt="">
                 </div>
                 <p class="description">“Many novice real estate investors soon quit the profession and invest. When you
                     invest in real estate, you often see a side of humanity that stocks, bonds, mutual funds, and saving
@@ -84,7 +84,7 @@ h2 {
 .rounded-buttom {
     position: absolute;
     bottom: 0;
-    background-color: white;
+    background-color: #f5f5f5;
     width: 100%;
     height: 80px;
     border-radius: 90% 90% 0 0;
