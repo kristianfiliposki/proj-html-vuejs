@@ -6,7 +6,18 @@ export default {
         return {
             store,
         }
-    }
+    },
+    methods: {
+
+    },
+    /* I TRY TO INCRESE THE STATISTIC NUMBERS */
+    /*     mounted() {
+            store.stats[0].numero.transition({
+                duration: 1000,
+                easing: 'ease-in-out',
+                to: 10
+            })
+        } */
 }
 </script>
 <template>
