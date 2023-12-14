@@ -23,11 +23,20 @@ import {
 }   
     from '@fortawesome/free-solid-svg-icons'
 
-    import { 
 
-        faLightbulb,
+
+import { 
+    faFacebook,
+    faTwitter,
+    faYoutube,
+    faInstagram,
     }   
-    
+    from '@fortawesome/free-brands-svg-icons'
+
+
+import { 
+    faLightbulb,
+    }   
         from '@fortawesome/free-regular-svg-icons'
 
 /* add icons to the library */
@@ -41,6 +50,12 @@ library.add(faBox)
 library.add(faGlobe)
 library.add(faGear)
 library.add(faLightbulb)
+library.add(faFacebook)
+library.add(faTwitter)
+library.add(faYoutube)
+library.add(faInstagram)
+
+
 
 
 

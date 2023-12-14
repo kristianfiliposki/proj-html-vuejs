@@ -10,25 +10,35 @@ export default {
 }
 </script>
 <template>
+    <!-- CONTAINER -->
     <div class="container">
+        <!-- INFO -->
         <div class="info">
+            <!-- TITLE -->
             <h2>Specialists In Modern Construction</h2>
             <hr>
+            <!-- DESCRIPTION -->
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                 magna
                 aliqua ut enim ad minim veniam.
             </p>
         </div>
+        <!-- Container CARDS -->
         <div class="container-cards">
+            <!-- Card -->
             <div v-for="card in store.cards" class="cards">
+                <!-- logo box  -->
                 <div class="logo-box">
+                    <!-- logo -->
                     <div class="logo">
                         <font-awesome-icon :icon="card.logo" />
                     </div>
                 </div>
+                <!-- name -->
                 <div class="name">
                     {{ card.name }}
                 </div>
+                <!-- description -->
                 <div class="p">
                     {{ card.p }}
                 </div>

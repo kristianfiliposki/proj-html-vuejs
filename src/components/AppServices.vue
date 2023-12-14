@@ -9,29 +9,38 @@ export default {
 }
 </script>
 <template>
+    <!-- Container -->
     <div class="container">
         <h2>Our Core Values</h2>
         <hr>
+        <!-- description -->
         <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
             labore et dolore
             magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
         </p>
+        <!-- box card -->
         <div class="box-card">
             <div v-for="serivice in store.services" class="card">
+                <!-- logo -->
                 <div class="element">
                     <div><font-awesome-icon :icon="serivice.logo" :class="serivice.class" /></div>
                 </div>
+                <!-- title -->
                 <div class="element">
                     <h4>{{ serivice.title }}</h4>
                 </div>
+                <!-- hr -->
                 <div class="separate element"></div>
 
+                <!-- description paragraph -->
                 <div class="element">
                     <p>{{ serivice.paragraph }}</p>
                 </div>
             </div>
         </div>
+        <!-- box card -->
     </div>
+    <!-- Container -->
 </template>
 
 <style scoped>

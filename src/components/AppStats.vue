@@ -10,31 +10,49 @@ export default {
 }
 </script>
 <template>
+    <!-- container -->
     <div class="container">
+        <!-- bordo angolare superiore -->
         <div class="rounded-top"></div>
+        <!-- background box -->
         <div class="img">
+            <!-- statistical card -->
             <div class="stats">
+                <!-- card -->
                 <div class="stat" v-for="stat in store.stats">
+                    <!-- wrapper -->
                     <div>
+                        <!-- logo box -->
                         <div class="box-logo">
+                            <!-- logo -->
                             <div class="logo">
                                 <font-awesome-icon :icon="stat.logo" />
                             </div>
                         </div>
+                        <!-- logo box -->
 
+                        <!-- card number -->
                         <div class="number">
                             {{ stat.numero }}
                         </div>
+                        <!-- card name -->
                         <div class="name">
                             {{ stat.name }}
                         </div>
                     </div>
+                    <!-- wrapper -->
                 </div>
+                <!-- card -->
             </div>
         </div>
+        <!-- background box -->
         <div class="rounded-buttom"></div>
+        <!-- bordo angolare inferiore -->
     </div>
+    <!-- container -->
 </template>
+
+
 <style scoped>
 .stats {
     display: flex;

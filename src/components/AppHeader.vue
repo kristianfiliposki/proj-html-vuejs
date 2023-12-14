@@ -24,6 +24,7 @@ export default {
             <!-- options -->
             <div class="container-options">
                 <ul class="options">
+                    <!-- Options -->
                     <a href="">
                         <li>HOME</li>
                     </a>
@@ -46,6 +47,8 @@ export default {
                             </div>
                         </li>
                     </a>
+                    <!-- Options -->
+
                 </ul>
             </div>
         </div>

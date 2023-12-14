@@ -2,7 +2,7 @@
 import { store } from '../store';
 // Import Swiper Vue.js components
 import { Swiper, SwiperSlide } from 'swiper/vue';
-import style from "../style"
+import '../style.css'
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -33,14 +33,19 @@ export default {
 
 </script>
 <template>
+    <!-- flex container -->
     <div class="flex">
+        <!-- box -->
         <div class="box">
+            <!-- h2 -->
             <h2>Trusted Partners</h2>
             <hr>
+            <!-- paragrafo -->
             <p class="description">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                 ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
             </p>
+            <!-- carosello error -->
             <div class="carosello">
 
                 <swiper :pagination="true" :modules="modules" class="mySwiper">
@@ -56,12 +61,14 @@ export default {
 
                 </swiper>
             </div>
+            <!-- carosello error -->
         </div>
     </div>
 </template>
 <style scoped>
 .carosello {
     margin: 1em;
+    width: 99vw;
 }
 
 .flex {

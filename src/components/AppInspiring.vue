@@ -9,22 +9,33 @@ export default {
 }
 </script>
 <template>
+    <!-- container -->
     <div class="container">
+        <!-- box-ansewer -->
         <div class="box-answer">
+            <!-- title -->
             <h2>BUILDING INSPIRING SPACES</h2>
             <hr>
+            <!-- paragraph -->
             <p class="description">Vivamus Sed Consectetur Tellus Dolor Sit Amet, Consectetur Adipiscing Lorem Elit Sadip
                 Ipsum
                 Ets
                 Ficilis Uns.
             </p>
+            <!-- paragraph -->
+
         </div>
+        <!-- box-ansewer -->
+
+        <!-- button -->
         <div class="box-button">
             <a href="">
                 <div class="GET">GET A QUOTE TODAY</div>
             </a>
             <p>Only takes a few seconds!</p>
         </div>
+        <!-- button -->
+
     </div>
 </template>
 <style scoped>

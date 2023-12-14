@@ -10,8 +10,11 @@ export default {
 }
 </script>
 <template>
+    <!-- container -->
     <div class="container">
+        <!-- bordo angolare superiore -->
         <div class="rounded-top"></div>
+        <!-- img-container -->
         <div class="img">
             <div class="box">
                 <h2>Our Home Owners Say</h2>
@@ -30,6 +33,9 @@ export default {
                 </div>
             </div>
         </div>
+        <!-- img-container -->
+
+        <!-- bordo angolare superiore -->
         <div class="rounded-buttom"></div>
     </div>
 </template>

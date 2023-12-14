@@ -10,23 +10,30 @@ export default {
 }
 </script>
 <template>
+    <!-- container -->
     <div class="container">
+        <!-- TITLE E SLOGAN -->
         <div>
+            <!-- TITLE -->
             <h1>BUILDING INSPIRING SPACES</h1>
+            <!-- SLOGAN -->
             <div class="slogan">We Build Inspiring Residential & Commercial Spaces</div>
         </div>
+        <!-- BUTTONS -->
         <div class="buttons">
+            <!-- BUTTON 1 -->
             <a href="">
                 <div class="left">EXPLORE RECENT WORK</div>
             </a>
 
+            <!-- BUTTON 2 -->
             <a href="">
                 <div class="right">GET A QUOTE TODAY</div>
             </a>
 
         </div>
     </div>
-    <div><font-awesome-icon icon="users" /></div>
+    <!-- container -->
 </template>
 <style scoped>
 a {

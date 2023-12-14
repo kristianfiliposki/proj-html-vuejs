@@ -9,7 +9,9 @@ export default {
 }
 </script>
 <template>
+    <!-- container -->
     <div class="container">
+        <!-- box -->
         <div class="box">
             <h2>Our Home Owners Say</h2>
             <hr>
@@ -17,23 +19,35 @@ export default {
                 invest in real estate, you often see a side of humanity that stocks, bonds, mutual funds, and saving
                 money shelter you from.”
             </p>
+            <!-- wrapper card -->
             <div class="wrapper-card">
                 <div class="card" v-for="element in store.news">
-                    <div class="img-wrapper"><img :src="element.img" alt="">
+                    <!-- img-wrapper -->
+                    <div class="img-wrapper">
+                        <!-- img -->
+                        <img :src="element.img" alt="">
                     </div>
+                    <!-- title card -->
                     <h3>{{ element.title }}</h3>
+                    <!-- date card -->
                     <p class="date">{{ element.date }}</p>
                     <hr>
+                    <!-- description card -->
                     <p class="description">
                         {{ element.p }}
                     </p>
                 </div>
             </div>
+            <!-- wrapper card -->
+
+
+            <!-- add new element -->
             <div class="plus-element">
                 <hr>
                 <div>View all project</div>
                 <hr>
             </div>
+            <!-- add new element -->
         </div>
     </div>
 </template>
